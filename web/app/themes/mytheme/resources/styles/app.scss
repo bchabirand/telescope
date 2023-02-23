@@ -1,0 +1,14 @@
+@import '~swiper/scss';
+
+// Common
+@import 'common/reset.scss';
+@import 'common/fonts.scss';
+@import 'common/variables.scss';
+@import 'common/global.scss';
+
+// Layout
+@import 'layout/header.scss';
+@import 'layout/footer.scss';
+
+// Components
+@import 'components/buttons.scss';

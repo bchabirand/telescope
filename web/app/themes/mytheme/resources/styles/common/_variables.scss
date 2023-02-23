@@ -1,0 +1,44 @@
+:root {
+  // Colors
+  --wp--preset--color--primary: #1D4ED8;
+  --wp--preset--color--accent: #B48E42;
+  --wp--preset--color--black: #000000;
+  --wp--preset--color--white: #FFFFFF;
+  --wp--preset--color--background: #FFFFFF;
+
+  // Contrasts
+  --wp--preset--color--contrast-lower: #F4F4F5;
+  --wp--preset--color--contrast-low: #D4D4D8;
+  --wp--preset--color--contrast-medium: #71717A;
+  --wp--preset--color--contrast-high: #3F3F46;
+  --wp--preset--color--contrast-higher: #18181B;
+
+  // Spacings
+  --wp--preset--spacing--xxxxs: 0.125rem;
+  --wp--preset--spacing--xxxs: 0.25rem;
+  --wp--preset--spacing--xxs: 0.375rem;
+  --wp--preset--spacing--xs: 0.5rem;
+  --wp--preset--spacing--sm: 0.75rem;
+  --wp--preset--spacing--md: 1.25rem;
+  --wp--preset--spacing--lg: 2rem;
+  --wp--preset--spacing--xl: 3.25rem;
+  --wp--preset--spacing--xxl: 5.25rem;
+  --wp--preset--spacing--xxxl: 8.5rem;
+  --wp--preset--spacing--xxxxl: 13.75rem;
+
+  // Font families
+  --wp--preset--font-family--system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --wp--preset--font-family--primary: 'Inter';
+  --wp--preset--font-family--secondary: 'Work Sans';
+
+  // Font sizes
+  --wp--preset--font-size--xxxxl: clamp(2.25rem, -0.8750rem + 8.3333vw, 3rem);
+  --wp--preset--font-size--xxxl: clamp(1.875rem, -0.8750rem + 8.3333vw, 2.25rem);
+  --wp--preset--font-size--xxl: clamp(1.5rem, -0.8750rem + 8.3333vw, 1.875rem);
+  --wp--preset--font-size--xl: clamp(1.25rem, -0.8750rem + 8.3333vw, 1.5rem);
+  --wp--preset--font-size--lg: clamp(1.125rem, -0.8750rem + 8.3333vw, 1.25rem);
+  --wp--preset--font-size--md: 1.125rem;
+  --wp--preset--font-size--base: 1rem;
+  --wp--preset--font-size--sm: 0.875rem;
+  --wp--preset--font-size--xs: 0.75rem;
+}

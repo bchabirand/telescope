@@ -1,0 +1,32 @@
+.btn {
+    padding: var(--wp--preset--spacing--sm) var(--wp--preset--spacing--lg);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--wp--preset--color--white);
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 3rem;
+    transition: all 0.3s ease;
+    opacity: 1;
+
+    &--primary {
+        background-color: var(--wp--preset--color--primary);
+        border-color: var(--wp--preset--color--primary);
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    &--secondary {
+        background-color: transparent;
+        border-color: var(--wp--preset--color--white);
+
+        &:hover {
+            color: var(--wp--preset--color--primary);
+            background-color: var(--wp--preset--color--white);
+            border-color: var(--wp--preset--color--white);
+        }
+    }
+}

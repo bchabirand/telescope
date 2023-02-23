@@ -1,0 +1,122 @@
+.header {
+    @media screen and (max-width: 899px) {
+        border-bottom: 1px solid var(--wp--preset--color--contrast-low);
+    }
+
+    &-wrapper {
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (min-width: 900px) {
+            height: 6.25rem;
+        }
+    }
+
+    &-brand {
+        display: flex;
+        align-items: center;
+        gap: var(--wp--preset--spacing--xs);
+        font-size: var(--wp--preset--font-size--xxl);
+        color: var(--wp--preset--color--black);
+        font-weight: 700;
+    }
+
+    &-primary-nav {
+        a {
+            color: var(--wp--preset--color--black);
+            opacity: 1;
+            transition: opacity 0.3s ease;
+
+            &:hover {
+                opacity: .8;
+            }
+
+            @media screen and (max-width: 899px) {
+                font-size: var(--wp--preset--font-size--lg);
+            }
+        }
+    }
+
+    &-secondary-nav {
+        .btn-nav a {
+            @extend .btn;
+            @extend .btn--primary;
+        }
+    }
+
+    &-nav {
+        display: flex;
+        gap: 3rem;
+
+        @media screen and (max-width: 899px) {
+            flex-direction: column;
+            gap: var(--wp--preset--spacing--lg);
+        }
+    }
+
+    &-burger {
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+
+        .close {
+            display: none;
+        }
+
+        @media screen and (min-width: 900px) {
+            display: none;
+        }
+    }
+
+    &.is-active {
+        .header-burger {
+            .burger {
+                display: none;
+            }
+
+            .close {
+                display: block;
+            }
+        }
+
+        .menu-mobile {
+            transform: translate(0);
+        }
+    }
+
+
+    @media screen and (max-width: 899px) {
+        &-desktop {
+            display: none;
+        }
+    }
+}
+
+.menu-mobile {
+    width: 100vw;
+    height: calc(100vh - 5rem);
+    padding: var(--wp--preset--spacing--lg);
+    position: fixed;
+    top: calc(5rem + 1px);
+    left: 0;
+    background-color: var(--wp--preset--color--white);
+    display: flex;
+    gap: var(--wp--preset--spacing--lg);
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+
+    @media screen and (min-width: 900px) {
+        display: none;
+    }
+
+    .btn-nav,
+    .btn-nav a {
+        width: 100%;
+    }
+}

@@ -1,0 +1,91 @@
+.wp-block-last-news {
+    padding-block: var(--wp--preset--spacing--xxl);
+    max-width: 64rem;
+    margin: 0 auto;
+
+    &-title {
+        margin-bottom: var(--wp--preset--spacing--lg);
+        font-size: var(--wp--preset--font-size--xxxl);
+        line-height: 1.2;
+    }
+   
+    &-swiper {
+        @media screen and (max-width: 1070px) {
+            overflow: visible;
+        }
+
+        &-slide {
+            max-width: 20.5rem;
+
+            @media screen and (max-width: 767px) {
+                max-width: 18.063rem;
+            }
+
+            &-image {
+                margin-bottom: var(--wp--preset--spacing--sm);
+                position: relative;
+                overflow: hidden;
+                border-radius: 1.25rem;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    display: block;
+                    transition: transform 0.6s ease;
+                }
+            }
+
+            &-title {
+                margin-bottom: var(--wp--preset--spacing--sm);
+                color: var(--wp--preset--color--black);
+                font-weight: 600;
+                font-size: var(--wp--preset--font-size--lg);
+            }
+
+            &-date {
+                color: var(--wp--preset--color--contrast-medium);
+            }
+
+            &:hover img {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    &-navigation {
+        margin-top: var(--wp--preset--spacing--lg);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: var(--wp--preset--spacing--xs);
+
+        &-prev,
+        &-next {
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--wp--preset--color--primary);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            cursor: pointer;
+
+            path {
+                stroke: var(--wp--preset--color--white);
+                transition: all 0.3s ease;
+            }
+
+            &.swiper-button-disabled {
+                background-color: var(--wp--preset--color--contrast-lower);
+                cursor: default;
+
+                path {
+                    stroke: var(--wp--preset--color--black);
+                }
+            }
+        }
+    }
+}

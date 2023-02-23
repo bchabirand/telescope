@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--wp--preset--font-family--primary), var(--wp--preset--font-family--system);
+  font-size: var(--wp--preset--font-size--base);
+  line-height: 1.2;
+  color: var(--wp--preset--color--black);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--wp--preset--font-family--secondary);
+    font-weight: 600;
+}
+
+h1 {
+    font-size: var(--wp--preset--font-size--xxxxl);
+}
+
+h2 {
+  font-size: var(--wp--preset--font-size--xxxl);
+}
+
+#app {
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  padding-inline: 1.5rem;
+  max-width: 83rem;
+  margin: 0 auto;
+}
